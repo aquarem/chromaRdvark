@@ -38,18 +38,6 @@ icv_chrom |>
 # then extend out from each until we hit the minimum in between each piece?
 
 
-startTime = 2.6
-minHeight = 0.2
-minWidth = 0.1
-
-peakStart = 2.7
-peakStop = 3.2
-
-icv_chrom |> 
-  ggplot(aes(x = `Time (min)`, y = `Value (µS)`)) +
-  geom_point() +
-  geom_vline(xintercept = c(startTime, peakStart, peakStop))
-
 
 # maybe we can incremenetally take the maximum
 # and filter out the bits we've already processed?
